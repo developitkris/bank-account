@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="http://icons.iconarchive.com/icons/chrisbanks2/cold-fusion-hd/128/bank-of-america-2-icon.png" alt="Bofa">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank of America</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="row-1">
+        <form id="create">
+        <div class="col-12">
+          <h2>Register with us:</h2>
+            <div class="form-group">
+              <label for="account">Name</label>
+              <input type="text" class="name" >
+            </div>
+            <div class="form-group">
+              <label for="initDeposit">Initial Deposit</label>
+              <input type="number" id="initDeposit" >
+            </div>
+
+
+            <button type="submit" name="button"> Register </button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row" id="row-2">
+        <div class="col-12">
+          <h2>Withdraw or Deposit</h2>
+          <div class="form-group">
+            <label for="acctNum"> Enter your account number: </label>
+            <input type="number" class="acctNum" placeholder="account number">
+            <label for="withdrawal">Withdrawal amount: </label>
+            <input type="number" id="withdrawal" placeholder="amount">
+          </div>
+          <div class="form-group">
+            <label for="acctNum"> Enter your account number: </label>
+            <input type="number" id="acctNum" placeholder="account number">
+            <label for="deposit">Deposit amount:</label>
+            <input type="number" id="deposit" placeholder="amount">
+          </div>
+          <div class="col-12">
+            <div class="output">
+              <label for="balance">Your current balance is:</label>
+              <input type="number" id="balance" >
+            </div>
+          </div>
+
+          <button type="button" name="button"> Update </button>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div id="Registered">
+        <h2>New Account Created</h2>
+        <p>Thank you <span class="Name"></span> for registering your account</p>
+        <p>Here is your Registered Account Number: <span id="accountNum" ></span></p>
+      </div>
+
+
+    </div>
+  </body>
+</html>
