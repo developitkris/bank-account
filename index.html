@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="row" id="row-1">
-        <form id="create">
+        <form id="info">
         <div class="col-12">
           <h2>Register with us:</h2>
             <div class="form-group">
@@ -25,8 +25,8 @@
             </div>
 
 
-            <button type="submit" name="button"> Register </button>
-          </form>
+            <button type="button" id="register"> Register </button>
+
         </div>
       </div>
       <br>
@@ -35,9 +35,10 @@
       <div class="row" id="row-2">
         <div class="col-12">
           <h2>Withdraw or Deposit</h2>
+
           <div class="form-group">
             <label for="acctNum"> Enter your account number: </label>
-            <input type="number" class="acctNum" placeholder="account number">
+            <input type="number" id="acctNum" placeholder="account number">
             <label for="withdrawal">Withdrawal amount: </label>
             <input type="number" id="withdrawal" placeholder="amount">
           </div>
@@ -54,7 +55,8 @@
             </div>
           </div>
 
-          <button type="button" name="button"> Update </button>
+          <button type="button" id="update"> Update </button>
+        </form>
         </div>
       </div>
       <br>
